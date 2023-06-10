@@ -4,7 +4,11 @@ from bs4 import BeautifulSoup
 import asyncio
 import requests
 
-app = FastAPI()
+app = FastAPI(
+    title="SHAZAM API",
+    description="MRGAYRATOV API",
+    version="1.0.0",
+)
 
 
 async def get_html(url):
@@ -107,4 +111,4 @@ async def search_music_endpoint(name: str):
 
 @app.get("/")
 async def Home():
-    return {'data' : "Telegram: @ai_junior"}
+    return {'data' : "Telegram: @ai_junior, @MrGayratov"}
