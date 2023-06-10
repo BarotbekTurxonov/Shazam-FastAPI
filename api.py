@@ -6,7 +6,7 @@ import requests
 
 app = FastAPI(
     title="SHAZAM API",
-    description="MRGAYRATOV API",
+    description="SHAZAM API",
     version="1.0.0",
 )
 
